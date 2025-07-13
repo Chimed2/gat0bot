@@ -20,6 +20,9 @@
       height: 100vh;
       margin: 0;
       backdrop-filter: brightness(0.85);
+      text-align: center;
+      padding: 2rem;
+      box-sizing: border-box;
     }
 
     h1 {
@@ -39,10 +42,40 @@
       transition: background 0.2s ease;
       text-decoration: none;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      margin-top: 1rem;
     }
 
     .invite-button:hover {
       background-color: #4752c4;
+    }
+
+    .faq {
+      margin-top: 3rem;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    details {
+      background-color: rgba(0, 0, 0, 0.4);
+      border: 1px solid #444;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      backdrop-filter: blur(2px);
+    }
+
+    summary {
+      font-size: 1.2rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    summary::marker {
+      color: #00ffff;
+    }
+
+    details[open] summary {
+      color: #00ffff;
     }
   </style>
 </head>
@@ -51,5 +84,20 @@
   <a class="invite-button" href="https://discord.com/oauth2/authorize?client_id=1385824015767310498" target="_blank">
     Invite Gat0B0t
   </a>
+
+  <div class="faq">
+    <details>
+      <summary>Is Gat0B0t free?</summary>
+      <p>Yes, it's free, and even open source.</p>
+    </details>
+    <details>
+      <summary>Is it up 24/7?</summary>
+      <p>Sadly, since I'm self-hosting the bot, I can't keep it up 24/7.</p>
+    </details>
+    <details>
+      <summary>Will Gat0B0t stay free?</summary>
+      <p>Yes! It will always be free and open source! (However, you could donate — later tho.)</p>
+    </details>
+  </div>
 </body>
 </html>
