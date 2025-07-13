@@ -7,7 +7,11 @@
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
-      background-color: #0e0e0e;
+      background-image: url("Zolkzf1.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color: #ffffff;
       display: flex;
       flex-direction: column;
@@ -15,12 +19,15 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
+      backdrop-filter: brightness(0.85);
     }
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 2rem;
       text-shadow: 0 0 5px #00ffff;
     }
+
     .invite-button {
       padding: 1rem 2rem;
       font-size: 1.2rem;
@@ -31,7 +38,9 @@
       cursor: pointer;
       transition: background 0.2s ease;
       text-decoration: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
+
     .invite-button:hover {
       background-color: #4752c4;
     }
