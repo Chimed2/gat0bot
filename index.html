@@ -31,21 +31,22 @@
       text-shadow: 0 0 5px #00ffff;
     }
 
-    .invite-button {
+    .button {
       padding: 1rem 2rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       background-color: #5865F2;
       color: white;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: background 0.2s ease;
       text-decoration: none;
+      margin: 0.5rem;
+      display: inline-block;
+      transition: background 0.2s ease;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      margin-top: 1rem;
     }
 
-    .invite-button:hover {
+    .button:hover {
       background-color: #4752c4;
     }
 
@@ -81,9 +82,12 @@
 </head>
 <body>
   <h1>Welcome to Gat0B0t's page!</h1>
-  <a class="invite-button" href="https://discord.com/oauth2/authorize?client_id=1385824015767310498" target="_blank">
-    Invite Gat0B0t
-  </a>
+
+  <a class="button" href="https://discord.com/oauth2/authorize?client_id=1385824015767310498" target="_blank">Invite Gat0B0t</a>
+  <a class="button" href="/commands">Commands List</a>
+  <a class="button" href="https://discord.com/terms" target="_blank">Discord ToS</a>
+  <a class="button" href="/termsofservice">Bot ToS</a>
+  <a class="button" href="https://github.com/Chimed2/GATObot" target="_blank">Source Code</a>
 
   <div class="faq">
     <details>
