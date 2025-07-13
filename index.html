@@ -7,26 +7,18 @@
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
-      background: url("Zolkzf1.webp") center/cover no-repeat fixed;
+      background-color: #0e0e0e;
       color: #ffffff;
-      text-align: center;
       margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 2rem;
+      text-align: center;
     }
-
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       text-shadow: 0 0 5px #00ffff;
     }
-
     .invite-button {
-      margin-top: 1rem;
       padding: 1rem 2rem;
       font-size: 1.2rem;
       background-color: #5865F2;
@@ -34,50 +26,84 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      text-decoration: none;
       transition: background 0.2s ease;
+      text-decoration: none;
     }
-
     .invite-button:hover {
       background-color: #4752c4;
     }
 
-    .button-group {
-      margin-top: 2rem;
+    .button-row {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
       justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
     }
-
-    .nav-button {
-      padding: 0.8rem 1.5rem;
+    .link-button {
+      padding: 0.75rem 1.5rem;
       font-size: 1rem;
-      background-color: #222;
-      color: #fff;
-      border: 1px solid #5865F2;
+      background-color: #2e2e2e;
+      color: white;
+      border: none;
       border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
       text-decoration: none;
-      transition: background-color 0.2s ease;
+    }
+    .link-button:hover {
+      background-color: #444;
     }
 
-    .nav-button:hover {
-      background-color: #5865F2;
+    details {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    summary:hover {
+      color: #00ffff;
+    }
+    details p {
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
   <h1>Welcome to Gat0B0t's page!</h1>
-
   <a class="invite-button" href="https://discord.com/oauth2/authorize?client_id=1385824015767310498" target="_blank">
     Invite Gat0B0t
   </a>
 
-  <div class="button-group">
-    <a class="nav-button" href="https://gat0bot.duckdns.org/commands">Commands List</a>
-    <a class="nav-button" href="https://discord.com/terms" target="_blank">Discord TOS</a>
-    <a class="nav-button" href="https://gat0bot.duckdns.org/termsofservice">Bot TOS</a>
-    <a class="nav-button" href="https://github.com/Chimed2/GATObot" target="_blank">Source Code</a>
+  <div class="button-row">
+    <a class="link-button" href="https://gat0bot.duckdns.org/commands">Commands List</a>
+    <a class="link-button" href="https://discord.com/terms">Discord ToS</a>
+    <a class="link-button" href="https://gat0bot.duckdns.org/termsofservice">Bot ToS</a>
+    <a class="link-button" href="https://github.com/Chimed2/GATObot" target="_blank">Source Code</a>
   </div>
+
+  <details>
+    <summary>Is Gat0B0t free?</summary>
+    <p>Yes, it's free, and even open source.</p>
+  </details>
+
+  <details>
+    <summary>Is it up 24/7?</summary>
+    <p>Sadly, since I'm self-hosting the bot, I can't keep it up 24/7.</p>
+  </details>
+
+  <details>
+    <summary>Will Gat0B0t stay free?</summary>
+    <p>Yes! It will always be free and open source! (However, you could donate — later tho.)</p>
+  </details>
 </body>
 </html>
