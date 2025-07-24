@@ -128,12 +128,12 @@
   </details>
 </body>
   <script>
-  const CLIENT_ID = "1385824015767310498"; // Your Discord App Client ID
+  const CLIENT_ID = "1397875074450722846"; // Your Discord App Client ID
   const REDIRECT_URI = "https://gat0bot.duckdns.org/callback"; // This must match the one in Discord Dev Portal
   const SCOPES = ["identify", "guilds"].join(" ");
 
   function loginWithDiscord() {
-    const oauthUrl = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&response_type=code&scope=${encodeURIComponent(SCOPES)}`;
+    const oauthUrl = `https://discord.com/oauth2/authorize?client_id=1397875074450722846&response_type=code&redirect_uri=https%3A%2F%2Fgat0bot.duckdns.org%2Fcallback&scope=identify+guilds`;
     window.location.href = oauthUrl;
   }
  </script>
