@@ -127,4 +127,15 @@
     <p>Yes! It will always be free and open source! (However, you could donate — later tho.)</p>
   </details>
 </body>
+  <script>
+  const CLIENT_ID = "1385824015767310498"; // Your Discord App Client ID
+  const REDIRECT_URI = "https://gat0bot.duckdns.org/callback"; // This must match the one in Discord Dev Portal
+  const SCOPES = ["identify", "guilds"].join(" ");
+
+  function loginWithDiscord() {
+    const oauthUrl = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&response_type=code&scope=${encodeURIComponent(SCOPES)}`;
+    window.location.href = oauthUrl;
+  }
+ </script>
+</body>
 </html>
